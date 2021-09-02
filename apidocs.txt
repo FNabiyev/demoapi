@@ -1,0 +1,85 @@
+CREATE | POST
+http://127.0.0.1:8000/api/users/
+
+{
+    "first_name":"Fazliddin",
+    "last_name":"Nabiyev",
+    "username":"root",
+    "password":"root",
+    "birthday":"1999-02-11",
+    "address":"Andijon viloyati Andijon shahar"
+}
+
+result
+
+{
+    "id": 1,
+    "first_name": "Fazliddin",
+    "last_name": "Nabiyev",
+    "username": "root",
+    "password": "root",
+    "birthday": "1999-02-11",
+    "address": "Andijon viloyati Andijon shahar",
+    "date": "2021-09-02 12:58:44"
+}
+
+GET | GET
+http://127.0.0.1:8000/api/users/1/
+
+result
+
+{
+    "id": 1,
+    "first_name": "Fazliddin",
+    "last_name": "Nabiyev",
+    "username": "root",
+    "password": "root",
+    "birthday": "1999-02-11",
+    "address": "Andijon viloyati Andijon shahar",
+    "date": "2021-09-02 12:58:44"
+}
+
+EDIT | PUT
+http://127.0.0.1:8000/api/users/1/
+
+{
+    "username":"root123"
+}
+
+result
+{
+    "id": 1,
+    "first_name": "Fazliddin",
+    "last_name": "Nabiyev",
+    "username": "root123",
+    "password": "root",
+    "birthday": "1999-02-11",
+    "address": "Andijon viloyati Andijon shahar",
+    "date": "2021-09-02 12:58:44"
+}
+
+DELETE | DELETE
+http://127.0.0.1:8000/api/users/1/
+
+LOGIN | POST
+http://127.0.0.1:8000/api/users/login/
+
+{
+    "username":"root",
+    "password":"root"
+}
+
+result
+
+{
+    "result": {
+        "id": 2,
+        "first_name": "Fazliddin",
+        "last_name": "Nabiyev",
+        "username": "root",
+        "password": "root",
+        "birthday": "1999-02-11",
+        "address": "Andijon viloyati Andijon shahar",
+        "date": "2021-09-02 13:04:03"
+    }
+}

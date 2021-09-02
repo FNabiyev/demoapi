@@ -1,0 +1,1 @@
+Tushunmovchilik bo'lsa, telegram : @FNabiyev
